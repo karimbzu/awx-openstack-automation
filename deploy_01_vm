@@ -1,0 +1,11 @@
+- name: Launch a compute instance
+  hosts: localhost
+  tasks:
+    - name: Launch a VM
+      os_server:
+        image: Photon 3.0
+        name: vm11
+        availability_zone: nova
+        flavor: m1.small
+        state: present
+        network: INTNET
