@@ -1,10 +1,26 @@
 - name: Launch a compute instance
   hosts: localhost
   tasks:
-    - name: Launch a VM
+    - name: Launch a Photon VM
       os_server:
         image: Photon 3.0
-        name: vm11
+        name: vm01
+        availability_zone: nova
+        flavor: m1.small
+        state: present
+        network: INTNET
+    - name: Launch a Centos OS 7
+      os_server:
+        image: CentOS7
+        name: vm02
+        availability_zone: nova
+        flavor: m1.small
+        state: present
+        network: INTNET
+    - name: Launch a Fedora Atomic Host
+      os_server:
+        image: Fedora Atomic Host
+        name: vm03
         availability_zone: nova
         flavor: m1.small
         state: present
