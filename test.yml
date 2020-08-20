@@ -4,7 +4,7 @@
     - name: Launch Centos 7
       os_server:
         image: CentOS7
-        name: vm005
+        name: vm1
         availability_zone: nova
         flavor: std.1
         state: present
