@@ -1,1 +1,11 @@
-
+- name: Launch a compute instance
+  hosts: localhost
+  tasks:
+    - name: Launch Centos 7
+      os_server:
+        image: centos7
+        name: vm02
+        availability_zone: nova
+        flavor: T1
+        state: present
+        network: ExternalPublic
