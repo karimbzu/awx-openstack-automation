@@ -1,0 +1,11 @@
+- name: Launch a compute instance
+  hosts: localhost
+  tasks:
+    - name: Launch Photon 3.0
+      os_server:
+        image: Photon 3.0
+        name: test123
+        availability_zone: nova
+        flavor: std.3
+        state: present
+        network: INTNET
