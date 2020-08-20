@@ -4,8 +4,8 @@
     - name: Launch Centos 7
       os_server:
         image: centos7
-        name: vm02
+        name: vm005
         availability_zone: nova
-        flavor: T1
+        flavor: std.1
         state: present
-        network: ExternalPublic
+        network: INTNET
