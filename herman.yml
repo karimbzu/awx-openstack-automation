@@ -1,11 +1,11 @@
 - name: Launch a compute instance
   hosts: localhost
   tasks:
-    - name: Launch ubuntu
+    - name: Launch Photon 3.0
       os_server:
-        image: ubuntu
-        name: drkarim
+        image: Photon 3.0
+        name: photon-test-demo
         availability_zone: nova
-        flavor: std.2
+        flavor: std.3
         state: present
         network: INTNET
