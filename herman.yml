@@ -4,7 +4,7 @@
     - name: Launch Photon 3.0
       os_server:
         image: Photon 3.0
-        name: photon-test
+        name: photon-test-webhook
         availability_zone: nova
         flavor: std.3
         state: present
