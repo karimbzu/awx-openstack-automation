@@ -1,10 +1,10 @@
-- name: Launch a compute instance using webhook
+- name: Launch a compute
   hosts: localhost
   tasks:
     - name: Launch Photon 3.0
       os_server:
         image: Photon 3.0
-        name: photon31 
+        name: photon32
         availability_zone: nova
         flavor: std.2
         state: present
