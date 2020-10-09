@@ -8,4 +8,4 @@
         availability_zone: nova
         flavor: std.2
         state: present
-        network: 	LOCAL-NET
+        network: LOCAL-NET
