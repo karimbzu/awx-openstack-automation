@@ -4,8 +4,8 @@
     - name: Launch Photon 3.0
       os_server:
         image: Photon 3.0
-        name: vm001
+        name: vm004
         availability_zone: nova
-        flavor: std.2
+        flavor: std.1
         state: present
         network: LOCAL-NET
