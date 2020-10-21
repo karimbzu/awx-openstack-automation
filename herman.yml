@@ -1,11 +1,6 @@
-- name: Launch a compute
-  hosts: localhost
-  tasks:
-    - name: Launch Photon 3.0
-      os_server:
-        image: Photon 3.0
-        name: vm004
-        availability_zone: nova
-        flavor: std.1
-        state: present
-        network: LOCAL-NET
+name: 'Launch a compute instance'
+hosts: localhost
+tasks:
+    name: 'Launch new VM'
+    os_server: { state: present, network: LOCAL-NET, image: 'CentOS 7', name: vm005, flavor: std.1, region_name: RegionTwo }
+
