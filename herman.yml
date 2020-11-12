@@ -1,11 +1,11 @@
 - name: Launch a compute instance
   hosts: localhost
   tasks:
-    - name: Launch vm002
+    - name: Launch vm001
       os_server:
-        image: 79f64681-3525-4bbc-8149-917cd7cd050e
+        image: 2529244a-85d5-4933-a754-b30b3a2d020f
         key_name: key
-        name: vm002
+        name: vm001
         availability_zone: nova
         flavor: std.1
         state: present
