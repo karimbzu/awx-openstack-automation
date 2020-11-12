@@ -7,6 +7,6 @@
         key_name: key
         name: vm001
         availability_zone: nova
-        flavor: std.1
+        flavor: std.2
         state: present
         network: 901503af-1747-4e77-b6d1-ee38c3a65ec6
